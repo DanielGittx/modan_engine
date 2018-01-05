@@ -12,7 +12,8 @@
 		</a></li>
 		<li>
 			<ul id="chart-types" class="sub-menu collapse ${fn:contains(pageContext.request.requestURI,'chart-types') ? 'in' : ''}">
-				<li><a href="${pageContext.request.contextPath}/chart-types/column">Column Chart</a></li>
+				<li><a href="${pageContext.request.contextPath}/chart-types/cctv_data_mgt">CCTV Backup</a></li>
+                                <li><a href="${pageContext.request.contextPath}/chart-types/column">Column Chart</a></li>
 				<li><a href="${pageContext.request.contextPath}/chart-types/line">Line Chart</a></li>
 				<li><a href="${pageContext.request.contextPath}/chart-types/step-line">Step Line Chart</a></li>
 				<li><a href="${pageContext.request.contextPath}/chart-types/spline">Spline Chart</a></li>

@@ -34,7 +34,7 @@ public class LoginController {
     		  && userName.equals("daniel") && 
     		  password != null && 
     		  !password.equals("") && 
-    		  password.equals("maureen")){
+    		  password.equals("test")){
     	  //message = "Welcome " +userName + ".";
           return new ModelAndView("welcome", "message", revenue);
        
