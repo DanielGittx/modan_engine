@@ -20,10 +20,11 @@ public class JstlView extends InternalResourceView {
 		// set original view being asked for as a request parameter
 		request.setAttribute("partial", dispatcherPath);
 		request.setAttribute("title",model.get("title"));
+                request.setAttribute("store",model.get("store"));
 		request.setAttribute("dataPoints",model.get("dataPoints"));
 		request.setAttribute("dataPoints1",model.get("dataPoints1"));
 		request.setAttribute("dataPoints2",model.get("dataPoints2"));
-
+                
 		// force everything to be template.jsp
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/jsp/template.jsp");
 		requestDispatcher.include(request, response);

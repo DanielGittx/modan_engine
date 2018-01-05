@@ -5,26 +5,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.ui.ModelMap;
+//import org.springframework.ui.ModelMap;
 
 @Controller
 @RequestMapping(value = "/chart-types", method = RequestMethod.GET)
 public class ChartTypesController {
-    /*
+    
     	@RequestMapping(value = "/cctv_data_mgt", method = RequestMethod.GET)   //Name of JSP to GET
 	public ModelAndView Cctv_data_mgt() {
-                ModelAndView modelAndView = new ModelAndView("ChartTypes/cctv_data_mgt"); //Name of associated JSP
-		modelAndView.addObject("title", "CCTV Data");
-                return modelAndView;
+                ModelAndView mav = new ModelAndView("ChartTypes/cctv_data_mgt"); //Name of associated JSP
+		mav.addObject("title", "CCTV Data");
+                mav.addObject("store",100); //NB:-The objects need to be added through JstlView Class
+                return mav;
 	}
-	*/
+	
    
+    /*// Works same as above 
         @RequestMapping(value = "/cctv_data_mgt", method = RequestMethod.GET)
         public String printHello(ModelMap model) {
             model.addAttribute("message", "Hello Spring MVC Framework!");
+            
             return "ChartTypes/cctv_data_mgt";
          }
-        
+        */
     
 	@RequestMapping(value = "/area", method = RequestMethod.GET)
 	public ModelAndView Area() {

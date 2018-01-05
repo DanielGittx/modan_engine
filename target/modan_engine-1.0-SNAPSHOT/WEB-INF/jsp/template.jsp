@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${title} modan analytics</title>
+<title>${title} |modan analytics</title>
 <link href="<c:url value="/assets/css/bootstrap.min.css" />" rel="stylesheet">
 <link href="<c:url value="/assets/font-awesome/css/font-awesome.min.css"/>" rel="stylesheet">
 <link href="<c:url value="/assets/css/style.css" />" rel="stylesheet">
@@ -85,7 +85,7 @@
 
 			<div class="row">
 				<div id="content" class="col-md-8 col-md-offset-1 col-xs-12">
-					<jsp:include page="${partial}" /></div>
+					<jsp:include page="${partial}" /></div>  <!--Render each JSP -->
 			</div>
 			<!-- /row -->
 		</div>
